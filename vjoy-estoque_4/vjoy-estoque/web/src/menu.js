@@ -1,0 +1,23 @@
+// Itens do menu (perm = permissão necessária; op = tela operacional)
+export const MENU = [
+  { to: '/', ic: '🏠', t: 'Início', perm: null, fim: true },
+  { to: '/entrada', ic: '📥', t: 'Entrada', perm: 'entrada', op: true },
+  { to: '/carregamento', ic: '🚛', t: 'Carregamento', perm: 'saida', op: true },
+  { to: '/saida', ic: '🚚', t: 'Saída por pedido', perm: 'saida', op: true },
+  { to: '/separacao', ic: '🧺', t: 'Separação', perm: 'separacao', op: true },
+  { to: '/conferencia', ic: '✅', t: 'Conferência', perm: 'conferencia', op: true },
+  { to: '/consulta', ic: '🔎', t: 'Consulta', perm: 'consulta', op: true },
+  { to: '/estoque', ic: '📦', t: 'Estoque atual', perm: 'consulta' },
+  { to: '/pedidos-mensais', ic: '🗓️', t: 'Pedidos mensais', perm: null },
+  { to: '/pedidos', ic: '📋', t: 'Pedidos', perm: null },
+  { to: '/dashboard', ic: '📊', t: 'Dashboard', perm: 'gestao', grupo: 'Gestão' },
+  { to: '/sobras', ic: '⚠️', t: 'Sobras / Excedentes', perm: 'gestao', grupo: 'Gestão' },
+  { to: '/relatorios', ic: '📑', t: 'Relatórios', perm: 'gestao', grupo: 'Gestão' },
+  { to: '/rastreio', ic: '🧭', t: 'Rastreabilidade', perm: 'gestao', grupo: 'Gestão' },
+  { to: '/importar', ic: '📤', t: 'Importar pedidos', perm: 'importar', grupo: 'Gestão' },
+  { to: '/clientes', ic: '🏷️', t: 'Clientes', perm: 'cadastros', grupo: 'Cadastros' },
+  { to: '/ruas', ic: '🛣️', t: 'Ruas', perm: 'cadastros', grupo: 'Cadastros' },
+  { to: '/produtos', ic: '🧾', t: 'Produtos', perm: 'cadastros', grupo: 'Cadastros' },
+  { to: '/etiquetas', ic: '🖨️', t: 'Etiquetas', perm: 'cadastros', grupo: 'Cadastros' },
+  { to: '/usuarios', ic: '👥', t: 'Usuários', perm: 'usuarios', grupo: 'Cadastros' },
+];

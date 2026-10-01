@@ -1,0 +1,29 @@
+{
+  "name": "vjoy-estoque",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch server/index.js",
+    "start": "node server/index.js",
+    "build": "cd web && npm install && npm run build",
+    "test": "node tests/e2e.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^11.3.0",
+    "@fastify/jwt": "^10.2.2",
+    "@fastify/multipart": "^10.1.2",
+    "@fastify/static": "^10.1.5",
+    "bcryptjs": "^3.0.3",
+    "csv-parse": "^7.0.3",
+    "exceljs": "^4.4.0",
+    "fastify": "^5.12.5",
+    "pdfkit": "^0.20.2",
+    "pg": "^8.23.0",
+    "socket.io": "^4.8.4"
+  },
+  "type": "module"
+}
